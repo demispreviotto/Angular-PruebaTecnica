@@ -1,0 +1,24 @@
+<div class="table_component">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <div><span>Title</span><span class="material-symbols-outlined">swap_vert</span></div>
+                </th>
+                <th>
+                    <div><span>Category</span><span class="material-symbols-outlined">swap_vert</span></div>
+                </th>
+                <th>
+                    <div><span>Price</span><span class="material-symbols-outlined">swap_vert</span></div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{ product.title }}</td>
+                <td>{{ product.category }}</td>
+                <td>{{ product.price }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
